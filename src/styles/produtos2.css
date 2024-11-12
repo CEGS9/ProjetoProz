@@ -1,50 +1,68 @@
-*{
+/* Resetando margens e padding */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.headerLogin{
-    color:#dfaf67 ;
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Estilização do cabeçalho de login */
+.headerLogin {
+    color: #dfaf67;
     background-color: blueviolet;
     font-size: 25px;
     margin-bottom: 20px;
     height: 80px;
     display: flex;
     align-items: center;
-   justify-content: center;
-   
+    justify-content: center;
 }
-.logo{
-    max-height:100px ;
+
+.logo {
+    max-height: 100px;
     margin-bottom: 10px;
 }
-.tituloLogin{
+
+.tituloLogin {
     text-align: center;
     font-size: 45px;
-    color:#dfaf67 ;
+    color: #dfaf67;
     margin-bottom: 30px;
 }
-.container{
+
+/* Container do login e cadastro */
+.container {
     display: flex;
     justify-content: center;
 }
-.loginCadastro{
-    background-color:#d4aae8 ;
+
+.loginCadastro {
+    background-color: #d4aae8;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 20px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     width: 200px;
     margin: 0 10px 27px 10px;
 }
-.loginCadastro label, .loginCadastro input{
+
+.loginCadastro label, .loginCadastro input {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.loginCadastro input[type="submit"]{
+.loginCadastro input[type="submit"] {
     width: auto;
 }
-input[type="submit"]{
+
+/* Estilização dos botões */
+input[type="submit"] {
     background-color: blueviolet;
     color: white;
     border: none;
@@ -52,20 +70,21 @@ input[type="submit"]{
     cursor: pointer;
     font-size: 1em;
     padding: 5px;
-    
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: blue;
 }
 
-.banner{
+/* Banner */
+.banner {
     max-width: 740px;
     display: block;
     margin: 0 auto;
 }
 
-.footerLogin{
+/* Rodapé de login */
+.footerLogin {
     background-color: blueviolet;
     font-size: 25px;
     color: #dfaf67;
@@ -74,6 +93,262 @@ input[type="submit"]:hover{
     width: 100%;
     height: 60px;
     margin-top: 60px;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    height: 150px;
+    width: 400px;
+    margin-left: 200px;
+}
+
+/* Estilização do cabeçalho da home */
+.headerHome {
+    background-color: #009688;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.headerHome nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.headerHome nav a img {
+    height: 50px;
+}
+
+.headerHome nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.headerHome nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.headerHome nav ul li a:hover {
+    background-color: hsl(173, 100%, 24%);
+}
+
+.headerHome nav .button {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.headerHome nav .button:hover {
+    background-color: #e68900;
+}
+
+/* Estilização de conteúdo principal */
+div {
+    text-align: center;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #000000;
+}
+
+.textoinicial {
+    display: flex; /* Ativa o layout Flexbox */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens dentro do contêiner */
+    background-color: #7ae8b8; /* Mesma cor de fundo para manter o design */
+    padding: 5px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+.textoinicial img {
+    max-width: 20%;
+    align-self: flex-start; /* Alinha a imagem à esquerda dentro do flex container */
+}
+.textoinicial h1 {
+    text-align: center; /* Mantém o texto alinhado à esquerda */
+    margin-bottom: 20px; /* Espaço entre o texto e a imagem */
+    width: 100%; /* O texto ocupa toda a largura disponível */
+}
+img {
+    
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilização de tabelas */
+table {
+    width: 500%;
+    margin-top: 50px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 32px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00796b;
+    color: #fff;
+}
+
+/* Estilização dos cards de produtos */
+.cards-section {
+    padding: 40px 20px;
+    background-color: #fafafa;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.cards-row {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.valor {
+    font-weight: bold;
+    color: #009688;
+    font-size: 1.2em;
+}
+
+.card button {
+    background-color: #0400ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #e68900;
+}
+
+/* Estilo do botão "Ir ao topo" */
+button a {
+    text-decoration: none;
+    color: white;
+    background-color: #009688;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button a:hover {
+    background-color: #00796b;
+}
+
+/* Estilização do rodapé */
+footer {
+    background-color: #009688;
+    color: #fff;
+    padding: auto;
+    text-align: center;
+}
+
+.imagemrodape {
+    width: 200px;
+    justify-content: flex-start;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px; /*Magem dos nomes dos conteudos do Rodapé*/
+
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+} /*conteudo do rodape*/
+
+
+footer .redes li a {
+    display: inline-block;
+    margin-right:60px; /*Margem dos nomes*/
+}
+
+footer .redes li a:hover {
+    opacity: 0.8;
+}
+
+footer section img {
+    width: 250px; /* Tamanho dos logos de redes sociais*/
+    margin-top: 10px; /*logos de redes sociais altura deles*/
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .headerHome nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
 }
 
 
