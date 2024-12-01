@@ -14,7 +14,7 @@ a { text-decoration: none; color: #fff;}
 
 body { font-size: 1.6rem; font-family:'inter', black sans-serif; font-weight: 600; background-image: url(../images/fundopp.png);}
 
-.frameH1 { justify-items: center; height: 151px;}
+.frameH1 { justify-items: center; height: 151px; background-color: #8eed90;}
 
 .divh1 { display: flex; height: 180px; margin-top: 5px;}
 
