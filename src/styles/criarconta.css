@@ -43,14 +43,69 @@ body {
     margin-top: 60px;
 }
 
-main{
+
+/* Estilo geral do formulário */
+form {
     display: flex;
+    flex-direction: column;
+    align-items:center;
+    left: 0%;
+    top: 100px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
-.aside{
-    height: 100px;
-    width: 300px;
-    margin-left: 200px;
+/* Estilo dos rótulos */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo adicional para o formulário */
+form input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* Estilização do cabeçalho da home */
@@ -144,16 +199,14 @@ align-self: flex-end;
 display: flex;
 
 }
-.sectionform {
-    width: 80px;
-    height: auto;
-    text-align: center;
- 
-}
 
 /* Estilização de tabelas */
 .table {
-    width: 500%;
+    position: relative;
+    left: 0%;
+    top: -500px;
+    height: 200%;
+    width: 20%;
     margin-top: 50px;
     border-collapse: collapse;
     background-color: #ffffff;
@@ -161,7 +214,7 @@ display: flex;
 
 th, td {
     padding: 32px;
-    text-align: left;
+    text-align:left;
     border-bottom: 1px solid #ddd;
 }
 
