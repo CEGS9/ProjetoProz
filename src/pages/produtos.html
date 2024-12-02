@@ -8,18 +8,21 @@
 
   </head>
   <body>
-    <header class="headerHome">
-      <nav>
-        <a href="index.html"><img src="../images/LOGO PET PLACE.png" alt="Logo Pet Place"></a>
-        <ul>
-            <li><a href="index.html">Loja</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="sobrenos.html">Sobre nós</a></li>
-            <li><a href="criarconta.html">Criar conta</a></li>
-        </ul>
-        <a href="login.html" class="button">Entrar</a>
-    </nav>
-    </header>
+    <header>
+      <div class="header-container">
+          <a href="index.html"><img src="../images/LOGO PET PLACE.png" alt="Logo Pet Place" class="logo"></a>
+          <nav>
+              <ul class="nav-buttons">
+                  <li><a href="#">Lojas</a></li>
+                  <li><a href="produtos.html">Produtos</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                  <li><a href="sobrenos.html">Sobre nós</a></li>
+                  <li><a href="criarconta.html">Criar conta</a></li>
+                  <li><a href="login.html" class="btn-enter">Entrar</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
 
     <div class ="textoinicial">
   <h1> Faça seu pedido de forma <br> Rápida e Personalizada</h1>
@@ -123,52 +126,45 @@
 
 
     <button><a href="produtos.html">Ir ao topo</a></button>
-    <footer> 
-      <section>
-          <div>
-              <h4>Institucional</h4>
+    <footer>
+      <div class="footer-container">
+          <div class="footer-column">
+              <h3>Institucional</h3>
               <ul>
-                  <li><a href="sobrenos.html">Sobre</a></li>
-                  <li><a href="#">Trabalhe conosco</a></li>
+                  <li><a href="#">Sobre</a></li>
+                  <li><a href="#">Trabalho conosco</a></li>
                   <li><a href="#">SAC</a></li>
                   <li><a href="#">Mapa do site</a></li>
               </ul>
           </div>
-          <div>
-              <h4>Políticas</h4>
+          <div class="footer-column">
+              <h3>Políticas</h3>
               <ul>
-                  <li><a href="#">Entrega</a></li>
-                  <li><a href="#">Pagamentos</a></li>
+                  <li><a href="#">Entregas</a></li>
+                  <li><a href="#">Parceiros</a></li>
                   <li><a href="#">Devolução</a></li>
                   <li><a href="#">Campanhas</a></li>
               </ul>
           </div>
-          <div>
-              <h4>Ajuda</h4>
+          <div class="footer-column">
+              <h3>Ajuda</h3>
               <ul>
                   <li><a href="#">Meus pedidos</a></li>
                   <li><a href="#">Meu cadastro</a></li>
                   <li><a href="#">Meu login</a></li>
               </ul>
           </div>
-          <div>
-            <h4>Redes</h4>
-            <ul class="redes">
-              <li><a href="http://www.facebook.com/" target="_blank" >Facebook </a></li>
-              <li><a href="http://www.instagram.com/" target="_blank">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
-          </ul> 
+          <div class="footer-column app-download">
+              <h3>Baixe nosso app</h3>
+              <div class="app-links">
+                  <img src="../images/qrcode.png" alt="QR Code para baixar o app">
+                  <div class="store-buttons">
+                      <a href="#"><img src="../images/GOOGLE_PLAY.png" alt="Google Play"></a>
+                      <a href="#"><img src="../images/APPLE_STORE.png" alt="App Store"></a>
+                  </div>
+              </div>
           </div>
-      </section>
-      <section>
-          <h4>Baixe nosso app</h4>
-          <a href="#"><img src="../images/GOOGLE_PLAY.png" alt="Google Play"></a>
-          <a href="#"><img src="../images/APPLE_STORE.png" alt="App Store"></a>
-          <div>
-              <img src="../images/download_media.png" alt="QR code para download do app">
-          </div>
-      </section>
-      <p>&copy; Pet Place 2024</p>  
+      </div>
   </footer>
   </body>
 </html>

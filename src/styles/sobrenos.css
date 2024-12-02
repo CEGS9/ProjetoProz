@@ -137,8 +137,8 @@ button{ background-color: blueviolet; color: white; border: none; border-radius:
   .button { background-color: #F9BB1E; font-size: 18px; border-radius: 20px; height: 40px; width: 70px; font-weight: 600;}
   
   body { font-size: 1.6rem; font-family: 'inter', sans-serif; font-weight: 600; background-image: url(../images/fundopp.png);}
-  
-  
+ 
+
   @media (max-width: 1024px) {
     nav { flex-direction: column; margin-right: 20px; margin-left: 20px;}
   

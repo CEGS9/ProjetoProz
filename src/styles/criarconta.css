@@ -109,53 +109,48 @@ form input::placeholder {
 }
 
 /* Estilização do cabeçalho da home */
-.headerHome {
-    background-color: #009688;
-    padding: 20px 0;
-    color: #fff;
+header {
+    background-color: #009CA6;
+    padding: 20px;
 }
 
-.headerHome nav {
+.header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.headerHome nav a img {
+.logo {
     height: 50px;
 }
 
-.headerHome nav ul {
+.nav-buttons {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
-.headerHome nav ul li a {
-    color: #fff;
+.nav-buttons li a {
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
-.headerHome nav ul li a:hover {
-    background-color: hsl(173, 100%, 24%);
-}
 
-.headerHome nav .button {
-    background-color: #ff9800;
+.btn-enter {
+    background-color: #F9BB1E;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
-    color: white;
+    color: #000;
     font-weight: bold;
 }
 
-.headerHome nav .button:hover {
-    background-color: #e68900;
+.btn-entrar:hover {
+    background-color: #F9BB1E;
 }
+
 .textoinicial{
 width: auto;
 height: 100px;
@@ -223,55 +218,69 @@ th {
     color: #fff;
 }
 footer {
-    background-color: #009688;
-    color: #fff;
-    padding: auto;
-    text-align: center;
+    background-color: #009CA6;
+    padding: 40px 20px;
+    color: #000;
 }
 
-.imagemrodape {
-    width: 200px;
-    justify-content: flex-start;
-}
-
-footer section {
+.footer-container {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 5px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-footer h4 {
-    font-size: 1.2em;
-    margin-bottom: 5px; /*Magem dos nomes dos conteudos do Rodapé*/
-
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
 }
 
-footer ul {
+.footer-column h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
     list-style: none;
-    text-align: left;
 }
 
-footer ul li a {
-    color: #fff;
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
     text-decoration: none;
-    margin-bottom: 5px;
-    display: block;
-} /*conteudo do rodape*/
-
-
-footer .redes li a {
-    display: inline-block;
-    margin-right:60px; /*Margem dos nomes*/
+    color: #000;
 }
 
-footer .redes li a:hover {
-    opacity: 0.8;
+.footer-column ul li a:hover {
+    text-decoration: underline;
 }
 
-footer section img {
-    width: 250px; /* Tamanho dos logos de redes sociais*/
-    margin-top: 10px; /*logos de redes sociais altura deles*/
+.app-download {
+    padding-top: 1%;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    background-color: #100069;
+    border-radius: 30px;
 }
+
+.app-links {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.store-buttons a img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 5px;
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
