@@ -4,133 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Contatos | PetPlace</title>
 </head>
 <body>
-<header> ]
-    <nav>
-        <a href="index.html"><img src="../images/LOGO PET PLACE.png" alt="Logo Pet Place"></a>
-        <ul>
-            <li><a href="index.html">Loja</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobrenos.html">Sobre nós</a></li>
-            <li><a href="criarconta.html">Criar conta</a></li>
-        </ul>
-        <a href="login.html" class="button">Entrar</a>
-    </nav>
-</header>
-<main>
-    <div>
-        <img src="../images/cahcorrofeliz.png" alt="cahcorro feliz">
-        <h1 class="slogam">O melhor cuidado com seu melhor amigo!</h1>
-    </div>
-    <section class="section_dados">
-        <div>
-            <div>
-        <address class="endereco">
-            <img src="../images/icone local.png" alt="logo local">
-            <h2>Endereço</h2>
-            Rua:Rosa,Nº 60 <br>
-            bairro: Flores <br>
-            são paulo - SP <br>
-            cep: 00000-000 <br>
-        </address>
-    </div>
-    <div>
-        <address class="tel">
-            <img src="../images/icone tel.png" alt="logo tel">
-            <h2>Telefones</h2>
-            11 0000-0000 <br>
-            11 90000-0000
-        </address>
-    </div>
-    <div>
-        <address class="email">
-            <img src="../images/icone email.png" alt="logo email">
-            <h2>E-mail</h2>
-            petplace2024@email.com
-        </address>
-    </div>
-    <div>
-        <address class="redes">
-            <img src="../images/icone redes.png" alt="logo redes">
-            <h2>Redes Socias</h2>
-            Instagram: @petplace2024 <br>
-            Twitter: @petplace2024   <br>
-            Facebook: facebook.com/petplace2024 <br>
-            TikTok: @petplace2024 <br>
-        </address>
-    </div>
-    </div>
-    </section>
-    <section>
-        <div>
-        <h2>Entre em Contato</h2>
-        <form action="">
-            <div>
-                <div>
-                    <input type="email" id="email" required placeholder="Seu email">
-                </div>
-                <div>
-                    <input type="tel" id="tel" required placeholder="Seu telefone"> <input type="cel" id="cel"required placeholder="Seu Celular">
-                </div>
-                <div>
-                    <input type="text" id="mensagem" required placeholder="mensagem">
-                </div>
-                <input type="submit">
+    <header>
+        <div class="header-container">
+            <img src="../images/LOGO PET PLACE.png" alt="Logo Pet Place" class="logo">
+            <nav>
+                <ul class="nav-buttons">
+                    <li><a href="#">Lojas</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Criar conta</a></li>
+                    <li><a href="#" class="btn-enter">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class = "main">
+        <section class="banner">
+            <div class="banner-content">
+                <img src="../images/cahcorrofeliz.png" alt="Imagem de um cachorro feliz" class="banner-image">
+                <h1 class="banner-text">O melhor <br> cuidado com <br> seu melhor<br> amigo!</h1>
             </div>
-        </form>
-    </div>
-    </section>
-</main>
-<button><a href="contato.html">Ir ao topo</a></button>
-<footer>
-    <img src="../images/FOOTER LOGO.png" alt="Logo Pet Place - dupla">
-    <section>
-        <div>
-            <h4>Institucional</h4>
-            <ul>
-                <li><a href="sobrenos.html">Sobre</a></li>
-                <li><a href="#">Trabalhe conosco</a></li>
-                <li><a href="#">SAC</a></li>
-                <li><a href="#">Mapa do site</a></li>
-            </ul>
+        </section>
+        <div class="info">
+            <div class="container">
+                <div class="card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
+                    <p>Rua AAAA, Nº 00</p>
+                    <p>Bairro BBBB</p>
+                    <p>Cidade CCC - SP</p>
+                    <p>CEP 00000-000</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-phone"></i> Telefone</h3>
+                    <p>TEL: 00 0000-0000</p>
+                    <p>CEL: 00 00000-0000</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-at"></i> E-mail</h3>
+                    <p>petplace2024@email.com</p>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+                    <p>Instagram: @petplace2024</p>
+                    <p>Twitter: @petplace2024</p>
+                    <p>Facebook: facebook.com/petplace2024</p>
+                    <p>TikTok: @petplace2024</p>
+                </div>
+            </div>
+            <div class="form">
+                <h3><i class="fas fa-envelope"></i> Entre em contato</h3>
+                <input type="email" placeholder="Seu email">
+                <div>
+                    <input type="text" placeholder="Seu telefone">
+                    <input type="text" placeholder="Seu celular">
+                </div>
+                <textarea placeholder="Mensagem"></textarea>
+                <div><input class="botãoform" type="submit"></div>
+            </div>
         </div>
-        <div>
-            <h4>Políticas</h4>
-            <ul>
-                <li><a href="#">Entrega</a></li>
-                <li><a href="#">Pagamentos</a></li>
-                <li><a href="#">Devolução</a></li>
-                <li><a href="#">Campanhas</a></li>
-            </ul>
+        <button><a href="contato.html">Ir ao topo</a></button>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Trabalho conosco</a></li>
+                    <li><a href="#">SAC</a></li>
+                    <li><a href="#">Mapa do site</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href="#">Entregas</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Devolução</a></li>
+                    <li><a href="#">Campanhas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#">Meus pedidos</a></li>
+                    <li><a href="#">Meu cadastro</a></li>
+                    <li><a href="#">Meu login</a></li>
+                </ul>
+            </div>
+            <div class="footer-column app-download">
+                <h3>Baixe nosso app</h3>
+                <div class="app-links">
+                    <img src="../images/qrcode.png" alt="QR Code para baixar o app">
+                    <div class="store-buttons">
+                        <a href="#"><img src="../images/GOOGLE_PLAY.png" alt="Google Play"></a>
+                        <a href="#"><img src="../images/APPLE_STORE.png" alt="App Store"></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h4>Ajuda</h4>
-            <ul>
-                <li><a href="#">Meus pedidos</a></li>
-                <li><a href="#">Meu cadastro</a></li>
-                <li><a href="#">Meu login</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Redes</h4>
-            <ul class="redes">
-                <li><a href="http://www.facebook.com/" target="_blank" >Facebook </a></li>
-                <li><a href="http://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank">Linkedin</a></li>
-            </ul> 
-        </div>
-    </section>
-    <section>
-        <h4>Baixe nosso app</h4>
-        <a href="#"><img src="../images/GOOGLE_PLAY.png" alt="Google Play"></a>
-        <a href="#"><img src="../images/APPLE_STORE.png" alt="App Store"></a>
-        <div>
-            <img src="../images/download_media.png" alt="QR code para download do app">
-        </div>
-    </section>
-    <p>&copy; Pet Place 2024</p>  
-</footer>
+    </footer>
 </body>
 </html>
