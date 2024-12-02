@@ -1,37 +1,38 @@
+/* Resetando margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    background-color: #009CA6
 
+/* Corpo do site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
 }
-nav {
-    color: aliceblue;
-    text-align: center;
+
+/* Estilização do cabeçalho de login */
+.headerLogin {
+    color: #dfaf67;
+    background-color: blueviolet;
+    font-size: 25px;
+    margin-bottom: 20px;
+    height: 80px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-ul {
-    display: flex;
-    list-style: none;
-    
-}
-a {
-    text-decoration: none;
-}
-.button{
-    color: rgb(255, 255, 255);
-    background-color: #F9BB1E;
-}
-body {
-    font-size: 1.6rem;
-    font-family:'inter', black sans-serif;
+    justify-content: center;
 }
 
-footer {
+.logo {
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Rodapé de login */
+.footerLogin {
     background-color: blueviolet;
     font-size: 25px;
     color: #dfaf67;
@@ -40,5 +41,251 @@ footer {
     width: 100%;
     height: 60px;
     margin-top: 60px;
-    
+}
+
+
+/* Estilo geral do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    left: 0%;
+    top: 100px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo dos rótulos */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo dos campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo adicional para o formulário */
+form input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilização do cabeçalho da home */
+.headerHome {
+    background-color: #009688;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.headerHome nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.headerHome nav a img {
+    height: 50px;
+}
+
+.headerHome nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.headerHome nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.headerHome nav ul li a:hover {
+    background-color: hsl(173, 100%, 24%);
+}
+
+.headerHome nav .button {
+    background-color: #ff9800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.headerHome nav .button:hover {
+    background-color: #e68900;
+}
+.textoinicial{
+width: auto;
+height: 100px;
+}
+h1{
+    width: center;
+    height: 70px;
+    font-size: 40px;
+    color: #000000;
+    text-align:left;
+}
+
+.textoinicial {
+    display: flex; /* Ativa o layout Flexbox */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens dentro do contêiner */
+    background-color: #7ae8b8; /* Mesma cor de fundo para manter o design */
+    padding: 0px; /* Espaçamento interno */
+    margin: 0px;
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+.vector{
+position: absolute;
+left: 0%;
+top: 145px;
+height: 120px;
+align-self: flex-start;
+}
+.textoinicial h1 {
+    text-align: center; /* Mantém o texto alinhado à esquerda */
+    margin-bottom: 20px; /* Espaço entre o texto e a imagem */
+    width: 100%; /* O texto ocupa toda a largura disponível */
+}
+.cachorro1{
+position: relative;
+left: 0%;
+top: -100px;
+width: auto;
+height: 100px;
+align-self: flex-end;
+display: flex;
+
+}
+
+/* Estilização de tabelas */
+.table {
+    position: relative;
+    left: 0%;
+    top: -500px;
+    height: 200%;
+    width: 20%;
+    margin-top: 50px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th, td {
+    padding: 32px;
+    text-align:left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #00796b;
+    color: #fff;
+}
+footer {
+    background-color: #009688;
+    color: #fff;
+    padding: auto;
+    text-align: center;
+}
+
+.imagemrodape {
+    width: 200px;
+    justify-content: flex-start;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+footer h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px; /*Magem dos nomes dos conteudos do Rodapé*/
+
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+} /*conteudo do rodape*/
+
+
+footer .redes li a {
+    display: inline-block;
+    margin-right:60px; /*Margem dos nomes*/
+}
+
+footer .redes li a:hover {
+    opacity: 0.8;
+}
+
+footer section img {
+    width: 250px; /* Tamanho dos logos de redes sociais*/
+    margin-top: 10px; /*logos de redes sociais altura deles*/
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .headerHome nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
 }
