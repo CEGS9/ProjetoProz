@@ -197,6 +197,7 @@ h1 {
 .textoinicial img {
     max-width: 20%;
     align-self: flex-start; /* Alinha a imagem à esquerda dentro do flex container */
+    margin-bottom: -9px;
 }
 .textoinicial h1 {
     text-align: center; /* Mantém o texto alinhado à esquerda */
