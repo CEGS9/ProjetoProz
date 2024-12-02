@@ -27,6 +27,11 @@ body {
     width: 120%;
 }
 
+.image-section {
+    flex: 1;
+    overflow: hidden;
+}
+
 .form-section {
     flex: 1;
     display: flex;
