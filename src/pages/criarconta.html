@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/criarconta.css">
+    
     <title>Criar Conta | PetPlace</title>
 </head>
 <body>
@@ -26,38 +27,57 @@
         <h1> Faça seu pedido de forma <br> Rápida e Personalizada </h1>
         <img src="../images/tag vector.png" alt="" class="vector">
         <img src="../images/Ccahorro 01.png" alt="cachorro" class="cachorro1">
+      </div>
+
+      <div class="container">        
+        <form id="form" class="form">
+          <h2>Nova conta</h2>
+          <div class="form-content">
+            <label for="username">Nome do usuário:</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Digite o nome do usuario..."
+            />
+            <a>Aqui vai a mensagem de erro....</a>
           </div>
-      <main>
-        <section Form class=>
-            <form action="">
-                <h2>Criar Conta</h2>
-                <div>
-                    <div>
-                        <label for="nome2">Nome:</label>
-                        <input type="text" id="nome2" required placeholder="Digite seu Nome">
-                    </div>
-                    <div>
-                            <label for="email2">E-mail:</label>
-                            <input type="email" id="email2" required placeholder="Digite seu E-mail">
-                    </div>
-                    <div>
-                            <label for="senha">Senha:</label>
-                            <input type="password" id="Senha" required placeholder="Crie sua Senha">
-                    </div>
-                        <div>
-                            <label for="confirmar-senha">Confirmar Senha:</label>
-                            <input type="password" id="Senha" required placeholder="Confirme sua Senha">
-                        </div>
-                        <div>
-                            <label for="endereço">Endereço:</label>
-                            <input type="text" id="Endereço" required placeholder="Digite seu Endereço">
-                        </div>
-                        <button type="submit">Criar</button>
-                </div>
-                </form>
-                <div>
-                <aside>
-                    <table class="table">
+    
+          <div class="form-content">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Digite o seu email..."
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="password">Senha:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Digite sua senha..."
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <div class="form-content">
+            <label for="password-confirmation">Confirmação de senha:</label>
+            <input
+              type="password"
+              id="password-confirmation"
+              placeholder="Digite sua senha novamente..."
+            />
+            <a>Aqui vai a mensagem de erro....</a>
+          </div>
+    
+          <button type="submit">Cadastrar</button>
+    
+        </form>
+    
+      </div>
+                <table class="table">
                       <tr>
                           <th>Cachorros</th>
                       </tr>
@@ -92,10 +112,7 @@
                     <tr>
                       <td>Medicamentos</td>
                   </tr>
-                  </table>
-                  </aside>
-      </main>
-  
+            </table>              
       <footer>
         <div class="footer-container">
             <div class="footer-column">
@@ -137,4 +154,5 @@
         </div>
     </footer>
     </body>
+    <script src="/src/script/criarconta.js"></script> 
 </html>

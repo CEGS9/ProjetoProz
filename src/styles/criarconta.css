@@ -3,115 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Corpo do site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Estilização do cabeçalho de login */
-.headerLogin {
-    color: #dfaf67;
-    background-color: blueviolet;
-    font-size: 25px;
-    margin-bottom: 20px;
-    height: 80px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #f9f9f9;    
     justify-content: center;
+    align-items: center; 
 }
 
 .logo {
+    height: 50px;
     max-height: 100px;
     margin-bottom: 10px;
-}
-
-/* Rodapé de login */
-.footerLogin {
-    background-color: blueviolet;
-    font-size: 25px;
-    color: #dfaf67;
-    text-align: center;
-    line-height: 50px;
-    width: 100%;
-    height: 60px;
-    margin-top: 60px;
-}
-
-
-/* Estilo geral do formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    left: 0%;
-    top: 100px;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
-
-/* Estilo dos rótulos */
-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Estilo dos campos de entrada */
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-/* Estilo do botão */
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo adicional para o formulário */
-form input::placeholder {
-    color: #aaa;
-    font-size: 14px;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 /* Estilização do cabeçalho da home */
 header {
     background-color: #009CA6;
-    padding: 20px;
+    padding: 25px;
 }
 
 .header-container {
@@ -122,9 +33,7 @@ header {
     margin: 0 auto;
 }
 
-.logo {
-    height: 50px;
-}
+
 
 .nav-buttons {
     list-style: none;
@@ -175,13 +84,13 @@ h1{
 .vector{
 position: absolute;
 left: 0%;
-top: 145px;
-height: 120px;
+top: 155px;
+height: 150px;
 align-self: flex-start;
 }
 .textoinicial h1 {
     text-align: center; /* Mantém o texto alinhado à esquerda */
-    margin-bottom: 20px; /* Espaço entre o texto e a imagem */
+    margin-bottom: 25px; /* Espaço entre o texto e a imagem */
     width: 100%; /* O texto ocupa toda a largura disponível */
 }
 .cachorro1{
@@ -192,34 +101,122 @@ width: auto;
 height: 100px;
 align-self: flex-end;
 display: flex;
-
 }
+
+h2{
+    width: center;
+    height: 50px;
+    font-size: 30px;
+    color: #000000;
+    text-align:center;
+}
+/* Estilo geral do formulário */
+.container{
+    background-color: #fafafa;
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 600px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    overflow: hidden;
+  }
+  
+    
+  .form{
+    position: absolute;
+    margin-top: 100;
+    right: 130px;
+    background-color:#f9f9f9;
+    border: 3px solid #9b9898;
+    border-radius: 10px;
+    margin: 180px;
+    margin color: #000;
+    max-width: 450px;
+    width: 100%;
+    box-sizing: 0 3px 5px rgba(0,0,0, 0,5);
+    justify-content: center;
+  }
+  
+  .form-content{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+  }
+  
+  .form-content label{
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  
+  .form-content input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+  }
+  
+  .form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form button{    
+    display: grid;
+    place-items: center;
+    background-color: #009CA6;
+    color: #ddd;
+    width: 300px;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 15px;
+    margin-left:75px;
+   
+}
+  
+  .form-content.error input{
+    border-color: #ff3b25;
+  }
+  
+  .form-content.error a{
+    color: #ff3b25;
+    visibility: visible;
+  }
+
 
 /* Estilização de tabelas */
-.table {
-    position: relative;
+table {
+    position:relative;
     left: 0%;
-    top: -500px;
-    height: 200%;
+    top: 20px;
+    height: auto;
     width: 20%;
-    margin-top: 50px;
     border-collapse: collapse;
     background-color: #ffffff;
-}
+    }
 
 th, td {
-    padding: 32px;
+    padding: 30px;
     text-align:left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
 }
 
 th {
     background-color: #00796b;
     color: #fff;
 }
+
 footer {
+    margin-top: 50px;
     background-color: #009CA6;
-    padding: 40px 20px;
+    padding: 10px 20px;
     color: #000;
 }
 
@@ -234,12 +231,12 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-column h3 {
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .footer-column ul {
