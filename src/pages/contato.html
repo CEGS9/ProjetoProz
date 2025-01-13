@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	    <script src="../script/contato.js" defer></script>
     <title>Contatos | PetPlace</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
             </nav>
         </div>
     </header>
-    <main class = "main">
+    <main class="main">
         <section class="banner">
             <div class="banner-content">
                 <img src="../images/cahcorrofeliz.png" alt="Imagem de um cachorro feliz" class="banner-image">
@@ -32,55 +33,66 @@
         </section>
         <section class="container">
             <div class="cardzao">
-              <div class="card">
-                <h2>Endereço</h2>
-                <p>Rua AAAA, Nº 00</p>
-                <p>Bairro BBBB</p>
-                <p>Cidade CCC - SP</p>
-                <p>CEP 00000-000</p>
-              </div>
-              <div class="card">
-                <h2>Telefone</h2>
-                <p>TEL: 00 0000-0000</p>
-                <p>CEL: 00 00000-0000</p>
-              </div>
-              <div class="card">
-                <h2>Redes Sociais</h2>
-                <p>Instagram: @petplace2024</p>
-                <p>Twitter: @petplace2024</p>
-                <p>Facebook: facebook.com/petplace2024</p>
-                <p>TikTok: @petplace2024</p>
-              </div>
-              <div class="card">
-                <h2>E-mail</h2>
-                <p>petplace2024@gmail.com</p>
-              </div>
+                <div class="card">
+                    <h2>Endereço</h2>
+                    <p>Rua AAAA, Nº 00</p>
+                    <p>Bairro BBBB</p>
+                    <p>Cidade CCC - SP</p>
+                    <p>CEP 00000-000</p>
+                </div>
+                <div class="card">
+                    <h2>Telefone</h2>
+                    <p>TEL: 00 0000-0000</p>
+                    <p>CEL: 00 00000-0000</p>
+                </div>
+                <div class="card">
+                    <h2>Redes Sociais</h2>
+                    <p>Instagram: @petplace2024</p>
+                    <p>Twitter: @petplace2024</p>
+                    <p>Facebook: facebook.com/petplace2024</p>
+                    <p>TikTok: @petplace2024</p>
+                </div>
+                <div class="card">
+                    <h2>E-mail</h2>
+                    <p>petplace2024@gmail.com</p>
+                </div>
             </div>
-      
             <div class="formulario">
-              <div>
-                <h2>Entre em contato</h2>
-              </div>
-              <form action="">
-                <div class="form-group">
-                  <input type="email" id="email" placeholder="Email" /><br />
+                <div>
+                    <h2>Entre em contato</h2>
                 </div>
-                <div class="phone-cell-group">
-                  <input type="tel" id="telefone" placeholder="Telefone" />
-                  <input type="tel" id="celular" placeholder="Celular" /><br />
-                </div>
-                <div class="form-group">
-                  <input
-                    class="textarea"
-                    type="text"
-                    id="mensagem"
-                    placeholder="Mensagem"
-                  />
-                </div>
-                <button type="submit" class="btn">Enviar</button>
-              </form>
+                <form id="form-contato">
+					<div>
+						<label for="email">E-mail:</label>
+						<input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+						<p id="email-helper" class="helper-text">Mensagem</p>
+					</div>
+					<div>						
+						<label for="telefone">Celular:</label>
+						<input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+						<p id="telefone-helper" class="helper-text">Mensagem</p>
+					</div>
+					<div>					
+						<label for="telefone">Telefone:</label>
+						<input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+						<p id="telefone-helper" class="helper-text">Mensagem</p>
+					</div>
+					<div>						
+						<label class="form-group">Digite sua mensagem:</label>
+                        <textarea
+                            class="textarea"
+                            id="mensagem"
+                            placeholder="Mensagem"
+                            required
+                            minlength="10"
+                        ></textarea>
+						<p< id="mensage-helper" class="helper-text">Mensagem</p>
+                        <span class="error-message" id="error-mensagem"></span>
+					</div>
+					<button type="submit" class="btn">Enviar</button>
+                </form>
             </div>
-          </section>
+        </section>
         <button><a href="contato.html">Ir ao topo</a></button>
     </main>
     <footer>
