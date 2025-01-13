@@ -104,13 +104,18 @@ header {
     margin: 50px auto;
     max-width: 1200px;
     text-align: center;
+    width: calc(100% * (items / visibleItems));
 }
 
 .carousel-container {
     position: relative;
     display: flex;
-    align-items: center;
     overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .title-carousel {
@@ -121,14 +126,14 @@ header {
 
 .carousel-items {
     display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
 }
 
 .carousel-item {
-    min-width: 200px;
-    background-color: #fff;
+    flex: 0 0 calc(100% / 5); /* Ajusta para 5 itens visíveis */
     padding: 20px;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -140,12 +145,16 @@ header {
 }
 
 .carousel-button {
-    background-color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px;
+    border: none;
     border-radius: 50%;
     cursor: pointer;
-    margin: 20px;
+    z-index: 10;
 }
 
 .carousel-button.prev {
@@ -161,17 +170,28 @@ header {
 }
 
 .to-the-top {
+    margin: 15px;
+    bottom: 20px;
+    right: 20px;
     text-decoration: none;
-    color: inherit;
-    text-decoration: none;
-    outline: none;
-    background-color: #092D5E;
-    border-radius: 10%;
+    background-color: #009CA6;
     color: #fff;
-    padding: 10px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    text-align: center;
     cursor: pointer;
-    margin: 1%;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
+
+.to-the-top:hover {
+    background-color: #0E438B;
+    transform: scale(1.0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 
 footer {
     background-color: #009CA6;
