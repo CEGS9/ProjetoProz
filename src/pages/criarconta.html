@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/criarconta.css">
+	<script src="../script/criarconta.js" defer></script> 
     
     <title>Criar Conta | PetPlace</title>
-</head>
+</head>j
 <body>
     <header>
         <div class="header-container">
@@ -39,7 +40,7 @@
               id="username"
               placeholder="Digite o nome do usuario..."
             />
-            <a>Aqui vai a mensagem de erro....</a>
+            <p id="username-helper" class="helper-text">Aqui vai a mensagem de erro....</p>
           </div>
     
           <div class="form-content">
@@ -49,29 +50,21 @@
               id="email"
               placeholder="Digite o seu email..."
             />
-            <a>Aqui vai a mensagem de erro....</a>
+            <p id="email-helper" class="helper-text">Aqui vai a mensagem de erro....</p>
           </div>
     
-          <div class="form-content">
-            <label for="password">Senha:</label>
-            <input
-              type="password"
-              id="password"
-              placeholder="Digite sua senha..."
-            />
-            <a>Aqui vai a mensagem de erro....</a>
-          </div>
-    
-          <div class="form-content">
-            <label for="password-confirmation">Confirmação de senha:</label>
-            <input
-              type="password"
-              id="password-confirmation"
-              placeholder="Digite sua senha novamente..."
-            />
-            <a>Aqui vai a mensagem de erro....</a>
-          </div>
-    
+			<div class="form-content">
+				<label for="password">Senha:</label>
+				<input type="password" id="password" placeholder="Digite sua senha..." />
+				<p id="password-helper" class="helper-text">Aqui vai a mensagem de erro...</p>
+			</div>
+
+			<div class="form-content">
+				<label for="password-confirmation">Confirmação de senha:</label>
+				<input type="password" id="password-confirmation" placeholder="Digite sua senha novamente..." />
+				<p id="password-confirmation-helper" class="helper-text">Aqui vai a mensagem de erro...</p>
+			</div>
+   
           <button type="submit">Cadastrar</button>
     
         </form>
@@ -154,5 +147,4 @@
         </div>
     </footer>
     </body>
-    <script src="/src/script/criarconta.js"></script> 
 </html>
