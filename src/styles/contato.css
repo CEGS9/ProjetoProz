@@ -99,7 +99,9 @@ header {
     margin-right: 50px;
   }
   .formulario{
-    max-width: 400px;
+	height: 500px;
+	width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 30px;
     background-color: #f4f4f4;
@@ -113,7 +115,6 @@ header {
     color: #003366;
     border-bottom: 2px solid #003366;
     margin-bottom: 15px;
-    
   }
 
 
@@ -126,7 +127,7 @@ header {
   }
 
   .textarea{
-    height: 100px;
+    height: 80px;
     max-width: 500px;
     
   }
@@ -185,11 +186,12 @@ header {
     padding: 6px 15px;
     background-color: #003366;
     color: white;
-    border: none;
+    border: 1px solid blue;
     border-radius: 4px;
     cursor: pointer;
+	display: block;
     font-size: 16px;
-    margin-left: 40%;
+    margin: 0 auto;
   }
   
   .btn:hover {
@@ -268,4 +270,55 @@ footer {
     max-width: 120px;
     height: auto;
     border-radius: 5px;
+}
+
+
+
+ /*Estilos dinâmicos*/
+ 
+ .required-popup::after {
+	content: "Campo obrigatório";
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ffffff;
+	font-size: 10px;
+	padding: .2rem .3rem;
+	width: auto;
+	display: block;
+	background-color: #202020;
+ }
+ 
+ input.error {
+	border: solid 2px #992020;
+	background-color: #cc7c7c;
+	color: #000000;
+ }
+ 
+ .helper-text {
+	text-align: center;
+    position: relative;
+	margin-bottom: 12px; 
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: #d9534f;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: none;
+	width: 75%;
+}
+
+.helper-text.visible {
+    display: block;
+}
+
+ 
+ input.correct {
+	background-color: #84d472;
+	border: solid 2px #206620;
+	color: #000000;
+ }
+ 
+.visible {
+	display: block;
 }
