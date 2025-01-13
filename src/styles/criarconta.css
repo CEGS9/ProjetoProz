@@ -180,7 +180,13 @@ h2{
     margin-left:75px;
    
 }
-  
+
+.form button:hover {
+    background-color: #00796b;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
   .form-content.error input{
     border-color: #ff3b25;
   }
@@ -201,6 +207,12 @@ table {
     border-collapse: collapse;
     background-color: #ffffff;
     }
+
+table tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
 
 th, td {
     padding: 30px;
@@ -279,19 +291,72 @@ footer {
 }
 
 
-/* Responsividade */
+ /*Estilos dinâmicos*/
+ 
+ .required-popup::after {
+	content: "Campo obrigatório";
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ffffff;
+	font-size: 10px;
+	padding: .2rem .3rem;
+	width: auto;
+	display: block;
+	background-color: #202020;
+ }
+ 
+ input.error {
+	border: solid 2px #992020;
+	background-color: #cc7c7c;
+	color: #000000;
+ }
+ 
+ .helper-text {
+	text-align: center;
+    position: relative;
+	margin-top: 12px; 
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #d9534f;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: none;
+	width: 75%;
+}
+
+.helper-text.visible {
+    display: block;
+}
+
+ 
+ input.correct {
+	background-color: #84d472;
+	border: solid 2px #206620;
+	color: #000000;
+ }
+ 
+.visible {
+	display: block;
+}
+
+
+
 @media (max-width: 768px) {
-    .headerHome nav ul {
+    .header-container, .footer-container {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+    }
+    
+    .form {
+        margin: 20px auto;
     }
 
-    .cards-row {
-        flex-direction: column;
-        align-items: center;
+    table {
+        width: 100%;
     }
 
-    .cards-container {
+    .app-links {
         flex-direction: column;
     }
 }
