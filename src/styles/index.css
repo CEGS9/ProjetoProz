@@ -275,20 +275,22 @@ header {
     background-color: #009CA6;
     padding: 15px 20px;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-size: 16px;
     text-align: center;
     cursor: pointer;
     z-index: 1000;
-    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .to-the-top:hover {
-    background-color: #0E438B;
-    transform: scale(1.0);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #00a6ce;
 }
 
+.to-the-top a {
+    color: #fff;
+    text-decoration: none;
+}
 
 footer {
     background-color: #009CA6;

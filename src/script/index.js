@@ -28,7 +28,7 @@ carouseldiv.innerHTML = `
 <section class="carousel">
     <h2 class="title-carousel">Tudo para seu gato</h2>
     <div class="carousel-container">
-        <button class="carousel-button prev">&#8249;</button>
+        <button class="carousel-button prev"><img src="../images/arrow_back.svg"></button>
         <div class="carousel-items">
             <div class="carousel-item">
                 <img src="../images/areiaGato.png" alt="Areia de gato BIO">
@@ -71,7 +71,7 @@ carouseldiv.innerHTML = `
                 <p>Cama para gato</p>
             </div>
         </div>
-        <button class="carousel-button next">&#8250;</button>
+        <button class="carousel-button next"><img src="../images/arrow_forward.svg"></button>
     </div>
 </section>
 `
