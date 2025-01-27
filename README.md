@@ -2,7 +2,7 @@
 
 <img src="image.PNG" alt="PetPlace">
 
-> O projeto é um marketplace de produtos e serviços para pets. As empresas e os profissionais se cadastram, os clientes (pais de pets/tutores) podem navegar, comparar, escolher e comprar diversos pordutos e serviços em um só lugar!
+> O projeto é um marketplace de produtos e serviços para pets. As empresas e os profissionais se cadastram, os clientes (pais de pets/tutores) podem navegar, comparar, escolher e comprar diversos produtos e serviços em um só lugar!
 
 
 
