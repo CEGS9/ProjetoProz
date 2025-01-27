@@ -5,13 +5,38 @@
     font-family: Arial, sans-serif;
 }
 
-body {
+main-div {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #f5f5f5;
 }
+
+.btn-home {
+	position: absolute;
+	display: block;
+	margin: 20px;
+    background-color: #009CA6;
+    padding: 15px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.btn-home:hover {
+    background-color: #00a6ce;
+}
+
+.btn-home a {
+    color: #fff;
+    text-decoration: none;
+}
+
 
 .login-container {
     display: flex;
