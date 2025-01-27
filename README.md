@@ -8,7 +8,7 @@
 
 ## 🤝 Devs
 
-Equipe 02 do curso Proz Educação:
+Equipe 02, do curso Talent Cloud, da Proz Educação:
 
 <table>
   <tr>
