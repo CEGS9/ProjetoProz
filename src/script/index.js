@@ -111,11 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Evento de clique no botão "próximo"
         nextButton.addEventListener("click", () => {
-            if (currentIndex < items.length - 1) {
-                currentIndex++;
-                updateCarousel();
-            }
-        });
+        if (currentIndex < items.length - 1) {
+            currentIndex++;
+        } else {
+           currentIndex = 0; // Reset to first item
+        }
+        updateCarousel();
+});
     });
 });
 
