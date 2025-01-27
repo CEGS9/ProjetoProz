@@ -1,6 +1,6 @@
 # PetPlace
 
-❗⚠️🚨📌-> https://petplace.fun/ <-📌🚨⚠️❗
+##⚠️📌-> https://petplace.fun/ <-📌⚠️
 
 <img src="image.PNG" alt="PetPlace">
 
