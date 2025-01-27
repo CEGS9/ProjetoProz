@@ -52,5 +52,13 @@ Equipe 02 do curso Proz Educação:
         </sub>
       </a>
     </td>
+                <td align="center">
+      <a href="https://github.com/devemertech" title="GitHub">
+        <img src="https://github.com/devemertech" width="100px;" alt="Foto de devemertech"/><br>
+        <sub>
+          <b>devemertech</b>
+        </sub>
+      </a>
+    </td>
   </tr>
 </table>
