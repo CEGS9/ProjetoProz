@@ -21,6 +21,7 @@ Equipe 02, do curso Talent Cloud, da Proz Educação:
           <b>Chioe2178</b>
         </sub>
       </a>
+      <p>Responsável pela página "Sobre Nós"</p>
     </td>
     <td align="center">
       <a href="https://github.com/RhoniPinheiro" title="GitHub">
@@ -29,6 +30,7 @@ Equipe 02, do curso Talent Cloud, da Proz Educação:
           <b>RhoniPinheiro</b>
         </sub>
       </a>
+     <p>Responsável pela página "Criar Conta"</p>
     </td>
     <td align="center">
       <a href="https://github.com/AnaBeatriz20024" title="GitHub">
@@ -37,6 +39,7 @@ Equipe 02, do curso Talent Cloud, da Proz Educação:
           <b>AnaBeatriz20024</b>
         </sub>
       </a>
+      <p>Responsável pela página "Produtos"</p>
     </td>
         <td align="center">
       <a href="https://github.com/EwertonHecsley" title="GitHub">
@@ -45,6 +48,7 @@ Equipe 02, do curso Talent Cloud, da Proz Educação:
           <b>EwertonHecsley</b>
         </sub>
       </a>
+      <p>Responsável pela página "Login"</p>
     </td>
             <td align="center">
       <a href="https://github.com/AnaBeatriz20024" title="GitHub">
@@ -53,6 +57,7 @@ Equipe 02, do curso Talent Cloud, da Proz Educação:
           <b>CEGS9</b>
         </sub>
       </a>
+      <p>Responsável pela página "Home"</p>
     </td>
                 <td align="center">
       <a href="https://github.com/devemertech" title="GitHub">
@@ -61,6 +66,7 @@ Equipe 02, do curso Talent Cloud, da Proz Educação:
           <b>devemertech</b>
         </sub>
       </a>
+      <p>Responsável pela página "Contato"</p>
     </td>
   </tr>
 </table>
